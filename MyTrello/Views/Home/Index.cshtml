@@ -1,8 +1,60 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Trello";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<link rel="stylesheet" href="~/css/IndexStyle.css"/>
+
+<body>
+
+    <div class='layout'>
+        <div class='layout__list'>
+            <div class="title">
+                <label class='card__label'>Teams</label>
+            </div>
+            <div class='list__card'>
+                <label class='card__label'>Team 1</label>
+                <div class='card__date'>Jan 28th</div>
+            </div>
+            <div class='list__card'>
+                <label class='card__label'>Team 2</label>
+                <div class='card__date'>Jan 28th</div>
+            </div>
+        </div>
+
+        <div class='layout__list'>
+            <div class="title">
+                <label class='card__label'>Up Next</label>
+            </div>
+            <div class='list__card'>
+                <label class='card__label'>Create Something</label>
+                <div class='card__date'>Jan 28th</div>
+            </div>
+            <div class='list__card'>
+                <label class='card__label'>Create Something</label>
+                <div class='card__date'>Jan 28th</div>
+            </div>
+            <div class='list__card'>
+                <label class='card__label'>Create Something</label>
+                <div class='card__date'>Jan 28th</div>
+            </div>
+        </div>
+
+        <div class='layout__list'>
+            <div class="title">
+                <label class='card__label'>Current Projects</label>
+            </div>
+            <div class='list__card'>
+                <label>Something Project</label>
+                <div class='card__date'>Sep 5th</div>
+            </div>
+            <div class='list__card'>
+                <label>Something Project</label>
+                <div class='card__date'>Oct 15th</div>
+            </div>
+            <div class='list__card'>
+                <label>Something Project</label>
+                <div class='card__date'>Jan 15th</div>
+            </div>
+        </div>
+    </div>
+</body>

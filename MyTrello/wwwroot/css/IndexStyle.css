@@ -1,0 +1,56 @@
+﻿body {
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+.title{
+    margin-left: 6px;
+    margin-top: 9px;
+}
+
+.layout {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fit, 200px);
+    grid-gap: 10px;
+}
+
+.layout__list {
+    align-self: start;
+    background-color: lightgray;
+    display: grid;
+    border-radius: 4px;
+}
+
+.list__card {
+    background-color: ghostwhite;
+    background: ghostwhite;
+    display: grid;
+    box-sizing: border-box;
+    margin: 6px;
+    border-radius: 4px;
+    padding: 8px;
+    transition: all 0.3s ease;
+}
+
+    .list__card:hover {
+        transform: scale(1.03);
+    }
+
+    .list__card:active {
+        transform: scale(1.03) rotate(2deg);
+    }
+
+    .list__card:last-child .card__date {
+        background: limegreen;
+    }
+
+.card__date {
+    font-size: 12px;
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+    padding: 2px 4px;
+    width: 50px;
+    text-align: center;
+}
