@@ -1,0 +1,17 @@
+﻿@model IEnumerable<MyTrello.Models.TrelloBoard>
+
+@{
+    ViewData["Title"] = "BoardList";
+}
+
+<h1>BoardList</h1>
+@foreach (var board in this.Model)
+{
+    <a asp-controller="TaskList" asp-action="Index" asp-route-id="@board.ID">@board.Name</a>
+
+}
+
+@section Scripts
+{
+
+}
